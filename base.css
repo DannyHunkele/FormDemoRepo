@@ -1,3 +1,17 @@
 fieldset {
-	width: 300px;
+	width: 350px;
+}
+
+body {
+	background-color: #ffdf97;
+}
+
+fieldset {
+	background-color: #c3eee7;
+	box-shadow: 10px 10px 5px #ff8f43;
+}
+
+label {
+	color: #003f72;
+	font-family: 'Montserrat', sans-serif;
 }
