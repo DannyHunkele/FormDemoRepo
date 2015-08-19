@@ -2,31 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link rel="stylesheet" href="base.css">
+	<title>Form Practice</title>
 </head>
 <body>
 	
 	<form action="#" method="GET">
 		
-		<label for="first_name">First Name</label>
-		<input type="text" id="first_name" name="first_name" placeholder="John" required>
+		<fieldset>
+			<label for="first_name">First Name</label>
+			<input type="text" id="first_name" name="first_name" placeholder="John" required>
+		</fieldset>
 
-		<label for="last_name">Last Name</label>
-		<input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+		<fieldset>
+			<label for="last_name">Last Name</label>
+			<input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+		</fieldset>
 
-		<label for="email_address">E-mail Address</label>
-		<input type="email" id="email_address" name="email_address" placeholder="name@domain.com">
+		<fieldset>
+			<label for="email_address">E-mail Address</label>
+			<input type="email" id="email_address" name="email_address" placeholder="name@domain.com">
+		</fieldset>
 
-		<label for="favorite_color">Please select your favorite color:</label>
-		<select id="favorite_color" name="favorite_color">
-			<option value="Red">Red</option>
-			<option value="Blue">Blue</option>
-			<option value="Green">Green</option>
-			<option value="Yellow">Yellow</option>
-			<option value="Other">Other</option>
-		</select>
+		<fieldset>
+			<label for="favorite_color">Please select your favorite color:</label>
+			<select id="favorite_color" name="favorite_color">
+				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Green">Green</option>
+				<option value="Yellow">Yellow</option>
+				<option value="Other">Other</option>
+			</select>
+		</fieldset>
 
-		<button type="submit">Submit</button>
+		<fieldset>
+			<button type="submit">Submit</button>
+		</fieldset>
 
 	</form>
 
