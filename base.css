@@ -1,17 +1,56 @@
 fieldset {
 	width: 350px;
+	background-color: #c3eee7;
+	box-shadow: 10px 10px 5px #ff8f43;
 }
 
 body {
 	background-color: #ffdf97;
 }
 
-fieldset {
-	background-color: #c3eee7;
+section {
+	float: left;
+	margin: 10px;
+}
+
+h1 {
+	font-family: 'Play', sans-serif;
+	color: #0f00f0;
+	border: 2px solid #000000;
+	width: 500px;
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 50%;
 	box-shadow: 10px 10px 5px #ff8f43;
+	background-color: #fff220;
+}
+
+h2 {
+	font-family: 'Play', sans-serif;
+	color: #0f00f0;
+	display: inline;	
+}
+
+fieldset {
+	
 }
 
 label {
 	color: #003f72;
 	font-family: 'Montserrat', sans-serif;
+}
+
+button#stay {
+	clear: both;
+	display: block;
+}
+
+#superheroes {
+	width: 490px;
+}
+
+#fictional_favorites {
+	clear: left;
 }

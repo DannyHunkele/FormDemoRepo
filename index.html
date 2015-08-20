@@ -4,41 +4,156 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="base.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
 	<title>Form Practice</title>
 </head>
 <body>
+
+	<h1>The Form to End All Forms</h1>
 	
-	<form action="#" method="GET">
+	<form id="main_form" action="#" method="GET">
 		
-		<fieldset>
-			<label for="first_name">First Name</label>
-			<input type="text" id="first_name" name="first_name" placeholder="John" required>
-		</fieldset>
+		<section id="personal_info" name="personal_info">
+			<h2>Personal Information</h2>
+			<fieldset>
+				<label for="first_name">First Name</label>
+				<input type="text" id="first_name" name="first_name" placeholder="John" required>
+			</fieldset>
 
-		<fieldset>
-			<label for="last_name">Last Name</label>
-			<input type="text" id="last_name" name="last_name" placeholder="Smith" required>
-		</fieldset>
+			<fieldset>
+				<label for="last_name">Last Name</label>
+				<input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+			</fieldset>
 
-		<fieldset>
-			<label for="email_address">E-mail Address</label>
-			<input type="email" id="email_address" name="email_address" placeholder="name@domain.com">
-		</fieldset>
+			<fieldset>
+				<label for="email_address">E-mail Address</label>
+				<input type="email" id="email_address" name="email_address" placeholder="name@domain.com">
+			</fieldset>
 
-		<fieldset>
-			<label for="favorite_color">Please select your favorite color:</label>
-			<select id="favorite_color" name="favorite_color">
-				<option value="Red" id="red">Red</option>
-				<option value="Blue">Blue</option>
-				<option value="Green">Green</option>
-				<option value="Yellow">Yellow</option>
-				<option value="Other">Other</option>
-			</select>
-		</fieldset>
+			<fieldset>
+				<label for="phone_number">Phone Number</label>
+				<input type="tel" id="phone_number" name="phone_number" placeholder="(###)###-####">
+			</fieldset>
 
-		<fieldset>
-			<button type="submit">Submit</button>
-		</fieldset>
+			<fieldset>
+				<label for="birthday">Birthday</label>
+				<input type="date" id="birthday" name="birhtday" min="1850-01-01" required>
+			</fieldset>
+
+			<fieldset>
+				<label for="favorite_color">Please select your favorite color:</label>
+				<select id="favorite_color" name="favorite_color">
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+					<option value="Other">Other</option>
+				</select>
+			</fieldset>
+		</section>
+
+		<section id="gaming_preferences" name="gaming_preferences">
+			<h2>Gaming Preferences</h2>
+			<fieldset>
+				<label for="gaming_consoles">What gaming consoles do you own?</label>
+				<br><br>
+				<input type="checkbox" name="gaming_consoles" value="Atari">Atari
+				<input type="checkbox" name="gaming_consoles" value="NES">NES
+				<input type="checkbox" name="gaming_consoles" value="SNES">SNES
+				<input type="checkbox" name="gaming_consoles" value="N64">N64
+				<input type="checkbox" name="gaming_consoles" value="Playstation">Playstation
+				<br>
+				<input type="checkbox" name="gaming_consoles" value="GameCube">GameCube
+				<input type="checkbox" name="gaming_consoles" value="PS2">PS2
+				<input type="checkbox" name="gaming_consoles" value="XBOX">XBOX
+				<input type="checkbox" name="gaming_consoles" value="Wii">Wii
+				<input type="checkbox" name="gaming_consoles" value="PS3">PS3
+				<br>
+				<input type="checkbox" name="gaming_consoles" value="XBOX 360">XBOX 360
+				<input type="checkbox" name="gaming_consoles" value="Wii U">Wii U
+				<input type="checkbox" name="gaming_consoles" value="PS4">PS4
+				<input type="checkbox" name="gaming_consoles" value="XBOX One">XBOX One
+			</fieldset>
+
+			<fieldset>
+				<label for="gaming_genres">What is your favorite genre?</label>
+				<br><br>
+				<input type="radio" name="gaming_genres" value="Platformer">Platformer
+				<input type="radio" name="gaming_genres" value="RPG">RPG
+				<input type="radio" name="gaming_genres" value="MMO">MMO
+				<input type="radio" name="gaming_genres" value="FPS">FPS
+				<input type="radio" name="gaming_genres" value="Puzzle">Puzzle
+				<br>
+				<input type="radio" name="gaming_genres" value="RTS">RTS
+				<input type="radio" name="gaming_genres" value="Fighter">Fighter
+				<input type="radio" name="gaming_genres" value="Action">Action
+				<input type="radio" name="gaming_genres" value="Other">Other
+			</fieldset>
+		</section>
+
+		<section id="food_preferences" name="food_preferences">
+			<h2>Food Preferences</h2>
+			<fieldset>
+				<label for="food_likes">What foods do you like to eat?</label>
+				<br><br>
+				<input type="checkbox" name="food_likes" value="Pizza">Pizza
+				<input type="checkbox" name="food_likes" value="Hamburgers">Hamburgers
+				<input type="checkbox" name="food_likes" value="Hot Dogs">Hot Dogs
+				<input type="checkbox" name="food_likes" value="Pasta">Pasta
+				<input type="checkbox" name="food_likes" value="Soup">Soup
+				<input type="checkbox" name="food_likes" value="Salad">Salad
+				<input type="checkbox" name="food_likes" value="Fruit">Fruit
+				<input type="checkbox" name="food_likes" value="Veggies">Veggies
+				<input type="checkbox" name="food_likes" value="Chips">Chips
+			</fieldset>
+
+			<fieldset>
+				<label for="beverage_likes">Please select your preferred beverage:</label>
+				<select id="beverage_likes" name="beverage_likes">
+					<option value="Water">Water</option>
+					<option value="Soda">Soda</option>
+					<option value="Juice">Juice</option>
+					<option value="Tea">Tea</option>
+					<option value="Coffee">Coffee</option>
+					<option value="Beer">Beer</option>
+					<option value="Liquor">Liquor</option>
+					<option value="Other">Other</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label for="chain_pizza">Please select your favorite chain pizza joint:</label>
+				<select id="chain_pizza" name="chain_pizza">
+					<option value="Pizza Hut">Pizza Hut</option>
+					<option value="Dominos">Dominos</option>
+					<option value="Papa Johns">Papa Johns</option>
+					<option value="Papa Murphy's">Papa Murphy's</option>
+					<option value="Barro's">Barro's</option>
+					<option value="Sardella's">Sardella's</option>
+					<option value="Peter Piper Pizza">Peter Piper Pizza</option>
+					<option value="Other">Other</option>
+					<option value="None">None</option>
+				</select>
+			</fieldset>
+		</section>
+
+		<section id="fictional_favorites" name="fictional_favorites">
+			<h2>Favorites from Fiction</h2>
+			<fieldset id="superheroes">
+				<label for="favorite_superhero">Who is your favorite superhero?</label>
+				<br><br>
+				<input type="checkbox" name="favorite_superhero" value="Superman"><img src="Superhero_Logos/Superman.jpg" alt="Superman Logo">
+				<input type="checkbox" name="favorite_superhero" value="Wonder_Woman"><img src="Superhero_Logos/Wonder_Woman.jpg" alt="Wonder Woman Logo">
+				<input type="checkbox" name="favorite_superhero" value="Batman"><img src="Superhero_Logos/Batman.jpg" alt="Batman Logo">
+				<input type="checkbox" name="favorite_superhero" value="Green_Lantern"><img src="Superhero_Logos/Green_Lantern.jpg" alt="Green Lantern Logo">
+				<input type="checkbox" name="favorite_superhero" value="Captain_America"><img src="Superhero_Logos/Captain_America.jpg" alt="Captain America Logo">
+				<input type="checkbox" name="favorite_superhero" value="Thor"><img src="Superhero_Logos/Thor.jpg" alt="Thor Logo">
+				<input type="checkbox" name="favorite_superhero" value="Spiderman"><img src="Superhero_Logos/Spiderman.jpg" alt="Spiderman Logo">
+				<input type="checkbox" name="favorite_superhero" value="Deadpool"><img src="Superhero_Logos/Deadpool.jpg" alt="Deadpool Logo">
+			</fieldset>
+		</section>
+
+			<button id="stay" type="submit" form="main_form">Submit</button>
 
 	</form>
 
